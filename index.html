@@ -139,7 +139,7 @@
             <div id="textOutput" class="text-output"></div>
         </div>
 
-        <!-- Watermark -->
+        <!-- Add Watermark -->
         <div class="tool-card">
             <div class="tool-icon"><i class="fas fa-tint"></i></div>
             <h2>Add Watermark</h2>
@@ -149,17 +149,22 @@
             <button onclick="addWatermark()" class="btn">Apply Mark</button>
         </div>
 
-        <!-- Page Management -->
+        <!-- Delete PDF Pages -->
         <div class="tool-card">
-            <div class="tool-icon"><i class="fas fa-file-alt"></i></div>
-            <h2>Page Tools</h2>
+            <div class="tool-icon"><i class="fas fa-trash-alt"></i></div>
+            <h2>Delete PDF Pages</h2>
             <input type="file" class="file-input" id="deletePagesInput" accept=".pdf">
             <input type="text" id="pagesToDelete" placeholder="Pages to delete (e.g., 1,3-5)" class="text-input">
+            <button onclick="deletePDFPages()" class="btn">Delete Pages</button>
+        </div>
+
+        <!-- Reorder PDF Pages -->
+        <div class="tool-card">
+            <div class="tool-icon"><i class="fas fa-sort-numeric-down"></i></div>
+            <h2>Reorder PDF Pages</h2>
+            <input type="file" class="file-input" id="reorderPagesInput" accept=".pdf">
             <input type="text" id="newPageOrder" placeholder="New order (e.g., 3,1,2)" class="text-input">
-            <div class="tool-actions">
-                <button onclick="deletePDFPages()" class="btn">Delete Pages</button>
-                <button onclick="reorderPDFPages()" class="btn">Reorder Pages</button>
-            </div>
+            <button onclick="reorderPDFPages()" class="btn">Reorder Pages</button>
         </div>
     </main>
 
