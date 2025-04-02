@@ -647,7 +647,6 @@ async function terminateOCRWorker() {
         ocrWorker = null;
     }
 }
-
 // ======================
 // Enhanced Text Extraction
 // ======================
